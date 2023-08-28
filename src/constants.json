@@ -8,10 +8,8 @@
 
     "contact": {
         "office" : "500 UTA Blvd ERB 436 Arlington, TX 76019",
-        "email": "uta.csec@gmail.com"
+        "email": "contact@utacsec.org"
     },
     
-    "calendar" : {
-
-    }
+    "calendar" : []
 }

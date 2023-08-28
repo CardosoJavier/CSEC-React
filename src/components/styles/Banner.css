@@ -97,7 +97,6 @@
   .banner button {
     font-size: var(--font-size-small);
   }
-
   .banner img {
     display: none;
   }
@@ -105,6 +104,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .banner img {
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -112,13 +114,14 @@
   .banner-title {
     font-size: var(--font-size-large);
   }
-
   .banner p {
     font-size: var(--font-size-small);
   }
-
   .banner button {
     font-size: var(--font-size-medium);
+  }
+  .banner img {
+    display: inline;
   }
 }
 
