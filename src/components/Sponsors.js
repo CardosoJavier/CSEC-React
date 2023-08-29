@@ -10,22 +10,22 @@ export function Sponsors() {
       <Container>
         <Row>
           <Col>
-            <div className="sponsors-box">
+            <div className="container-box">
               <h1>
                 Our <span className="beloved">beloved</span> sponsors
               </h1>
               <p>
-                A big thanks to all our{" "}
-                <span className="beloved">sponsors</span>!
+                A big thanks to all our
+                <span className="beloved"> sponsors</span>!
               </p>
+
               <div className="sponsors-cards">
-                {/* UTA */}
                 <SponsorCard
                   frontImage={UTA}
                   backText="UTA text description"
                   link="https://www.uta.edu/academics/schools-colleges/engineering"
                 />
-                {/* ISACA */}
+
                 <SponsorCard
                   frontImage={ISACA}
                   backText="ISACA text description"

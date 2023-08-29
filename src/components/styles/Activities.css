@@ -1,7 +1,8 @@
 .activities {
   position: relative;
   background-color: black;
-  padding: 20vh 0;
+  min-height: 120vh;
+  padding: 50vh 0;
 }
 
 .activities h2 {
@@ -34,6 +35,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .activity-card {
@@ -185,8 +187,8 @@
   z-index: -4;
 }
 
-/* Extra Small Devices (Phones) */
-@media (max-width: 575.98px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .activities h2 {
     font-size: var(--font-size-large);
   }
@@ -204,18 +206,29 @@
   }
 }
 
-/* Small Devices (Tablets) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .activity-card {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
-/* Medium Devices (Landscape Tablets and Small Desktops) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .activity-cards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .activity-card {
+    width: 95%;
+  }
 }
 
-/* Large Devices (Desktops) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
 
-/* Extra Large Devices (Large Desktops) */
-@media (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
